@@ -18,11 +18,11 @@ public class PorcentajeNotas {
      */
     public static void main(String[] args)throws IOException  {
         // TODO code application logic here
-        BufferedReader uno = new BufferedReader (
+        BufferedReader dos = new BufferedReader (
         new InputStreamReader(System.in));
-        System.out.println(uno);
+        System.out.println(dos);
         
-        String cadena=uno.readLine();
+        String cadena=dos.readLine();
         int num=Integer.parseInt(cadena);
     }
     
