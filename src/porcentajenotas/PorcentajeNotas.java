@@ -30,17 +30,16 @@ public class PorcentajeNotas {
             "P",
             "NP"
         };
-        notas = new int [5];
+        notas = new int [6];
         try{
           for (int i=0; i<=notas.length; i++) {
             System.out.println("Escribe el numero de " + titulos[i] + ":");
             notas[i] = Integer.parseInt(pedirNumero());
             alumnos = alumnos + notas[i];
-            System.out.println("Valor de i" + i);
-            if (notas[i] < 5) {
+        if (i < 5) {
               presentados = presentados + notas[i];
             }
-            System.out.println("Presentados " + presentados + " Total" + alumnos);
+            System.out.println("Presentados " + presentados + " / Total " + alumnos);
             System.out.println(titulos[i] + " -> " + notas[i]);
           }
           /*String sb = pedirNumero();
@@ -48,7 +47,7 @@ public class PorcentajeNotas {
 
 
         }catch(Exception e){
-            System.out.print("Se ha producido un error");
+            System.out.print("Se ha producido un error" + e);
         }
 
 
